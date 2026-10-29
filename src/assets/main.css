@@ -1,0 +1,57 @@
+@import './base.css';
+/* รีเซ็ตพื้นฐาน + ให้เบราว์เซอร์คำนวนเท่ากัน */
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #app { height: 100%; color:#2c3e50;}
+img { max-width: 100%; display: block; height: auto; }
+
+/* iOS จะ “ซูมเข้า” เมื่อ font-size < 16px ตอนโฟกัส input */
+input, select, textarea { font-size: 16px; }
+
+/* ป้องกัน Safari ปรับขนาดฟอนต์เอง */
+html { -webkit-text-size-adjust: 100%; }
+/* ให้ element ที่ชอบรีเซ็ตสี กลับมาใช้สี body */
+a, p, h1, h2, h3, h4, h5, h6, li, span, div, button, input, textarea, label {
+  color: inherit;
+}
+/* ใช้ dvh สำหรับมือถือที่มีแถบระบบ (iOS/Android ใหม่ ๆ) */
+:root { --app-dvh: 100dvh; }
+@supports not (height: 100dvh) {
+  :root { --app-dvh: 100vh; } /* fallback เก่า */
+}
+#app {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* @media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
+
+*,*::before,*::after{box-sizing:border-box}
+html,body,#app{height:100%}
+img{display:block;max-width:100%}

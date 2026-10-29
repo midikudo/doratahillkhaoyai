@@ -1,0 +1,88 @@
+{
+  "common": {
+    "home": "Home",
+    "viewAll": "View all",
+    "loading": "Loading…",
+    "notFound": "No data",
+    "readMore": "Read more",
+    "details": "View Details",
+    "searchPlaceholder":"Search..",
+    "refresh":"Refresh"
+  },
+  "home": {
+    "articlesTitle":"Good articles / stories from Dorata",
+    "siteTitle": "Dorata Hill Khao Yai",
+    "tagline": "A cozy private pool villa nestled in Khao Yai for families and friends to truly unwind.",
+    "roomsTitle": "Our Villas",
+    "noRooms": "No rooms yet",
+    "facTitle": "Facilities",
+    "actsTitle": "In-house Activities",
+    "noActs": "No activities yet",
+    "newsTitle": "News & Promotions",
+    "noNews": "No announcements",
+    "noData":"No Data",
+    "facilitiesTitle":"facilities",
+    "noActivities":"No Activities",
+    "activitiesTitle":"Activities",
+    "reviewsTitle": "Guest Reviews",
+    "noReviews": "No reviews yet",
+    "viewRooms":"View rooms",
+    "attractionsTitle": "Nearby Attractions",
+    "noAttractions": "No attractions found",
+    "blogTitle": "Stories from Dorata",
+    "heroTag":"Private pool villa, a warm and cozy vacation home surrounded by the nature of Khao Yai, for families and groups of friends who want to spend a happy and relaxing time.",
+    "contactTitle":"Contact us / Book a house",
+    "contactLead":"Quick chat with admin or call to reserve.",
+    "quick": {
+        "tel": "Tel",
+        "line": "ADD LINE",
+        "check": "Check availability",
+        "available": "Available dates",
+        "contact": "Contact us",
+        "fastReply":"Fast reply"
+      }
+  },
+  "rooms":{
+    "backToList":"back",
+    "viewPhotos":"view Photos",
+    "searchPlaceholder":"Search..",
+     "title":"Our house"
+  },
+  "activities":{
+    "title":"Activities",
+    "inhouse":"Activity in house",
+    "searchActivity":"Search..",
+    "nearby":"Near By",
+    "prev":"Prev",
+    "next":"Next"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "phone": "Phone",
+    "addLine": "Add LINE",
+    "map": "View Map",
+    "address":"398 Tambon Pong Ta Long, Pak Chong District, Nakhon Ratchasima 30130"
+  },
+  "reviews":{
+    "title":"Reviews"
+  },
+  "blog": { "title": "Stories from Dorata Hill" },
+  "nav": {
+    "home": "Home",
+    "rooms": "Rooms",
+    "activities": "Activities",
+    "reviews": "Reviews",
+    "contact": "Contact"
+  },
+  "actions": { "book": "Book" },
+  "topbar": {
+    "phone": "Tel.",
+    "checkAvailability": "Check availability",
+    "contactBooking": "Book now"
+  },
+  "a11y": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "navDialog": "Navigation menu"
+  }
+}

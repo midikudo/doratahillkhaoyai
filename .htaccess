@@ -1,0 +1,23 @@
+# --- Vue Router history mode fallback ---
+Options -MultiViews
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # อย่าแตะไฟล์/โฟลเดอร์จริง
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # ยกเว้น /api และ /uploads ไม่ให้ fallback
+  RewriteCond %{REQUEST_URI} !^/(api|uploads)(/|$)
+
+  # ที่เหลือทั้งหมดให้ส่ง index.html กลับไป
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# ใช้ในบางโฮสต์ที่ไม่เปิด mod_rewrite (อย่างใดอย่างหนึ่ง)
+# FallbackResource /index.html
+
+# เผื่อไฟล์ .webp
+AddType image/webp .webp
